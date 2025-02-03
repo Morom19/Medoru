@@ -1,1 +1,1 @@
-# Medoru
+web: python bot.py
