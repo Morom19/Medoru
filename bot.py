@@ -5,7 +5,8 @@ import os
 from time import sleep
 
 # Bot token
-TELEGRAM_BOT_TOKEN = "7988299708:AAEy9qi6cil6UXIl_isql1INul9H8giNIzw"
+TELEGRAM_BOT_TOKEN = '7988299708:7734895902:AAF0fCUsnNjaJUI2YU1r7r3lW-NBZnTu-x8'
+
 # Owner ID
 owner_id = 7661505696
 
@@ -98,7 +99,7 @@ def handle_start(message):
             bot.send_message(message.chat.id, escape_markdown("❌ I am not an admin in this group. Please make me an admin to fetch player commands."))
             return
         
-        bot.send_message(messageyejivod882@vayonix.com.chat.id, escape_markdown("👋 Welcome! Use `/ff <region> <uid>` to get Free Fire account details.\n\n🔹 Example: `/ff sg 12345678`"))
+        bot.send_message(message.chat.id, escape_markdown("👋 Welcome! Use `/ff <region> <uid>` to get Free Fire account details.\n\n🔹 Example: `/ff sg 12345678`"))
     elif message.chat.type == 'private' and message.from_user.id == owner_id:
         bot.reply_to(message, escape_markdown("👋 Welcome! Use `/ff <region> <uid>` to get Free Fire account details.\n\n🔹 Example: `/ff sg 12345678`"))
     elif message.chat.type == 'private':
